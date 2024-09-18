@@ -15,8 +15,8 @@ def caesar(data, key, mode):
             new_data += alphabet[new_index]  
     return new_data
 
-key = 5
-original = input("")
+key = int(input("Digite aqui o valor da chave: "))
+original = input("Digite a frase para ser encriptada: ")
 print('Original:', original)
 ciphered = caesar(original, key, MODE_ENCRYPT)
 print('Encriptada:', ciphered)
